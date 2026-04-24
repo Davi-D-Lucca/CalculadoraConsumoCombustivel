@@ -1,5 +1,5 @@
 ﻿
-namespace CalculadoraConsumoCombustivel
+namespace CalculadoraConsumoCombustivelForms
 {
     partial class nameForm
     {
