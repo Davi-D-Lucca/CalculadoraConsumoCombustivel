@@ -5,7 +5,7 @@ using System;
 namespace CalculadoraConsumoCombustivel.teste
 {
     [TestClass]
-    public class UnitTest1
+    public class ConsultaListaPostoTeste
     {
         [TestMethod]
         public void TestRetornaPostoDiesel()
