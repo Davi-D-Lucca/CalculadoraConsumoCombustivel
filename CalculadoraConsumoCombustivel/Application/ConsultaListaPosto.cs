@@ -39,5 +39,6 @@ namespace CalculadoraConsumoCombustivel.Application
             var result = await Consulta.GetAsync<PostosResponseDTO>("https://petroinfo.tec.br/postos/dados_postos/?cidade_selecionada=MARILIA&combustivel_selecionado=GC");
             return result;
         }
+
     }
 }

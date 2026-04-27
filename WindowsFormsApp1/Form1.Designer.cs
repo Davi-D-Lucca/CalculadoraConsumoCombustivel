@@ -44,7 +44,6 @@ namespace WindowsFormsApp1
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.simpleLabelItem2 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.simpleLabelItem3 = new DevExpress.XtraLayout.SimpleLabelItem();
@@ -55,6 +54,9 @@ namespace WindowsFormsApp1
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -70,7 +72,6 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem3)).BeginInit();
@@ -81,6 +82,8 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -92,6 +95,7 @@ namespace WindowsFormsApp1
             this.layoutControl1.Controls.Add(this.txt_veiculo);
             this.layoutControl1.Controls.Add(this.txt_distancia);
             this.layoutControl1.Controls.Add(this.txt_consumo);
+            this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
@@ -180,7 +184,6 @@ namespace WindowsFormsApp1
             this.layoutControlItem5,
             this.layoutControlItem4,
             this.layoutControlItem3,
-            this.emptySpaceItem1,
             this.simpleLabelItem1,
             this.simpleLabelItem2,
             this.simpleLabelItem3,
@@ -188,9 +191,11 @@ namespace WindowsFormsApp1
             this.lb_valor_etanol,
             this.lb_valor_diesel,
             this.emptySpaceItem2,
-            this.emptySpaceItem3,
             this.layoutControlItem6,
-            this.layoutControlItem7});
+            this.layoutControlItem7,
+            this.layoutControlItem8,
+            this.emptySpaceItem4,
+            this.emptySpaceItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(800, 450);
             this.layoutControlGroup1.TextVisible = false;
@@ -240,56 +245,48 @@ namespace WindowsFormsApp1
             this.layoutControlItem3.Text = "Quantidade";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(101, 13);
             // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(408, 0);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(194, 146);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
             // simpleLabelItem1
             // 
             this.simpleLabelItem1.AllowHotTrack = false;
-            this.simpleLabelItem1.Location = new System.Drawing.Point(602, 0);
+            this.simpleLabelItem1.Location = new System.Drawing.Point(631, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
-            this.simpleLabelItem1.Size = new System.Drawing.Size(178, 17);
+            this.simpleLabelItem1.Size = new System.Drawing.Size(149, 17);
             this.simpleLabelItem1.Text = "Gasolina";
             this.simpleLabelItem1.TextSize = new System.Drawing.Size(101, 13);
             // 
             // simpleLabelItem2
             // 
             this.simpleLabelItem2.AllowHotTrack = false;
-            this.simpleLabelItem2.Location = new System.Drawing.Point(602, 47);
+            this.simpleLabelItem2.Location = new System.Drawing.Point(631, 46);
             this.simpleLabelItem2.Name = "simpleLabelItem2";
-            this.simpleLabelItem2.Size = new System.Drawing.Size(178, 17);
+            this.simpleLabelItem2.Size = new System.Drawing.Size(149, 17);
             this.simpleLabelItem2.Text = "Etanol";
             this.simpleLabelItem2.TextSize = new System.Drawing.Size(101, 13);
             // 
             // simpleLabelItem3
             // 
             this.simpleLabelItem3.AllowHotTrack = false;
-            this.simpleLabelItem3.Location = new System.Drawing.Point(602, 112);
+            this.simpleLabelItem3.Location = new System.Drawing.Point(631, 80);
             this.simpleLabelItem3.Name = "simpleLabelItem3";
-            this.simpleLabelItem3.Size = new System.Drawing.Size(178, 17);
+            this.simpleLabelItem3.Size = new System.Drawing.Size(149, 17);
             this.simpleLabelItem3.Text = "Diesel";
             this.simpleLabelItem3.TextSize = new System.Drawing.Size(101, 13);
             // 
             // lb_valor_gasolina
             // 
             this.lb_valor_gasolina.AllowHotTrack = false;
-            this.lb_valor_gasolina.Location = new System.Drawing.Point(602, 17);
+            this.lb_valor_gasolina.Location = new System.Drawing.Point(631, 17);
             this.lb_valor_gasolina.Name = "lb_valor_gasolina";
-            this.lb_valor_gasolina.Size = new System.Drawing.Size(178, 17);
+            this.lb_valor_gasolina.Size = new System.Drawing.Size(149, 17);
             this.lb_valor_gasolina.Text = " ";
             this.lb_valor_gasolina.TextSize = new System.Drawing.Size(101, 13);
             // 
             // lb_valor_etanol
             // 
             this.lb_valor_etanol.AllowHotTrack = false;
-            this.lb_valor_etanol.Location = new System.Drawing.Point(602, 64);
+            this.lb_valor_etanol.Location = new System.Drawing.Point(631, 63);
             this.lb_valor_etanol.Name = "lb_valor_etanol";
-            this.lb_valor_etanol.Size = new System.Drawing.Size(178, 17);
+            this.lb_valor_etanol.Size = new System.Drawing.Size(149, 17);
             this.lb_valor_etanol.Text = " ";
             this.lb_valor_etanol.TextSize = new System.Drawing.Size(101, 13);
             // 
@@ -297,26 +294,26 @@ namespace WindowsFormsApp1
             // 
             this.lb_valor_diesel.AllowHotTrack = false;
             this.lb_valor_diesel.CustomizationFormText = " ";
-            this.lb_valor_diesel.Location = new System.Drawing.Point(602, 129);
+            this.lb_valor_diesel.Location = new System.Drawing.Point(631, 97);
             this.lb_valor_diesel.Name = "lb_valor_diesel";
-            this.lb_valor_diesel.Size = new System.Drawing.Size(178, 17);
+            this.lb_valor_diesel.Size = new System.Drawing.Size(149, 17);
             this.lb_valor_diesel.Text = " ";
             this.lb_valor_diesel.TextSize = new System.Drawing.Size(101, 13);
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(602, 34);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(631, 34);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(178, 13);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(149, 12);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(602, 81);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(631, 114);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(178, 31);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(149, 32);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem6
@@ -336,6 +333,32 @@ namespace WindowsFormsApp1
             this.layoutControlItem7.Size = new System.Drawing.Size(408, 24);
             this.layoutControlItem7.Text = "Consumo médio Km/L";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(101, 13);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(420, 12);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(219, 22);
+            this.simpleButton1.StyleController = this.layoutControl1;
+            this.simpleButton1.TabIndex = 8;
+            this.simpleButton1.Text = "Selecione o Posto";
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.simpleButton1;
+            this.layoutControlItem8.Location = new System.Drawing.Point(408, 0);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(223, 26);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem8.TextVisible = false;
+            // 
+            // emptySpaceItem4
+            // 
+            this.emptySpaceItem4.AllowHotTrack = false;
+            this.emptySpaceItem4.Location = new System.Drawing.Point(408, 26);
+            this.emptySpaceItem4.Name = "emptySpaceItem4";
+            this.emptySpaceItem4.Size = new System.Drawing.Size(223, 120);
+            this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // Form1
             // 
@@ -360,7 +383,6 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem3)).EndInit();
@@ -371,6 +393,8 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -390,7 +414,6 @@ namespace WindowsFormsApp1
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem2;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem3;
@@ -403,6 +426,9 @@ namespace WindowsFormsApp1
         private DevExpress.XtraEditors.TextEdit txt_consumo;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
     }
 }
 

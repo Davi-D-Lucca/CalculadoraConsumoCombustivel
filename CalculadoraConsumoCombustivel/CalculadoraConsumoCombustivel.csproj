@@ -78,6 +78,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\AggregateStrategy.cs" />
     <Compile Include="Application\ConsultaListaPosto.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DTO\CnaeSecundarioDTO.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="DTO\SocioDTO.cs" />
     <Compile Include="DTO\VeiculoDTO.cs" />
     <Compile Include="Enum\TipoCombustivel.cs" />
+    <Compile Include="Interfaces\IAggregateStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ConsultaApi.cs" />
   </ItemGroup>
