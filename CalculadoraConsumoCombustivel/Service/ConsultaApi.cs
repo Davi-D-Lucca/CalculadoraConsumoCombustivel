@@ -2,8 +2,9 @@
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using System.Net;
+using System.Text.Json;
+
 
 namespace CalculadoraConsumoCombustivel.Service
 {
@@ -40,7 +41,14 @@ namespace CalculadoraConsumoCombustivel.Service
 
                 string json = await response.Content.ReadAsStringAsync();
 
-                return JsonConvert.DeserializeObject<T>(json);
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
+
+                return JsonSerializer.Deserialize<T>(json, options);
+
+                //return JsonConvert.DeserializeObject<T>(json);
             }
             catch (Exception ex)
             {
@@ -55,7 +63,9 @@ namespace CalculadoraConsumoCombustivel.Service
         {
             try
             {
-                string jsonRequest = JsonConvert.SerializeObject(data);
+                string jsonRequest = JsonSerializer.Serialize(data);
+                //string jsonRequest = JsonConvert.SerializeObject(data);
+
 
                 var content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
 
@@ -66,7 +76,8 @@ namespace CalculadoraConsumoCombustivel.Service
 
                 string jsonResponse = await response.Content.ReadAsStringAsync();
 
-                return JsonConvert.DeserializeObject<TResponse>(jsonResponse);
+                return JsonSerializer.Deserialize<TResponse>(jsonResponse);
+                //return JsonConvert.DeserializeObject<TResponse>(jsonResponse);
             }
             catch (Exception ex)
             {
