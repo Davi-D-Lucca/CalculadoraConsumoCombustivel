@@ -28,5 +28,16 @@ namespace CalculadoraConsumoCombustivel.Application
             return result;
         }
 
+        public async Task<PostosResponseDTO> ConsultaPostosEtanol()
+        {
+            var result = await Consulta.GetAsync<PostosResponseDTO>("https://petroinfo.tec.br/postos/dados_postos/?cidade_selecionada=MARILIA&combustivel_selecionado=EH");
+            return result;
+        }
+
+        public async Task<PostosResponseDTO> ConsultaPostosGasolina()
+        {
+            var result = await Consulta.GetAsync<PostosResponseDTO>("https://petroinfo.tec.br/postos/dados_postos/?cidade_selecionada=MARILIA&combustivel_selecionado=GC");
+            return result;
+        }
     }
 }
