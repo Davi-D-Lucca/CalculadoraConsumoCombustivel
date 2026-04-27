@@ -1,12 +1,10 @@
-﻿using CalculadoraConsumoCombustivel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-namespace CalculadoraConsumoCombustivelForms
+namespace WindowsFormsApp1
 {
     static class Program
     {
@@ -18,7 +16,7 @@ namespace CalculadoraConsumoCombustivelForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new nameForm());
+            Application.Run(new Form1());
         }
     }
 }

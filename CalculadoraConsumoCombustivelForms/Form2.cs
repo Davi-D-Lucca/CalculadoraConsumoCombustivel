@@ -11,16 +11,18 @@ using System.Windows.Forms;
 
 namespace CalculadoraConsumoCombustivel
 {
-    public partial class nameForm : Form
+    public partial class Form2 : Form
     {
-        public nameForm()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void btn_calcular_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             var consulta = new ConsultaApi();
+
+            MessageBox.Show("dkfndsfnksdnkjf");
         }
     }
 }

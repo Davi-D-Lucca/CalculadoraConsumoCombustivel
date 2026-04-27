@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -8,7 +8,7 @@
     <ProjectGuid>{96658523-3E68-46EB-9566-FAE5E1E84A84}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CalculadoraConsumoCombustivel</RootNamespace>
-    <AssemblyName>CalculadoraConsumoCombustivel</AssemblyName>
+    <AssemblyName>CalculadoraConsumoCombustivelForms</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -315,12 +315,6 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -356,10 +350,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CalculadoraConsumoCombustivel\CalculadoraConsumoCombustivel.csproj">
-      <Project>{BE4EC1E1-C994-49C1-94C6-27AAAFC27591}</Project>
-      <Name>CalculadoraConsumoCombustivel</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\CalculadoraConsumoCombustivel\CalculadoraConsumoCombustivel.csproj" />
+      <Project>{be4ec1e1-c994-49c1-94c6-27aaafc27591}</Project>
+      <Name>CalculadoraConsumoCombustivel</Name>`r`n      <Private>True</Private>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

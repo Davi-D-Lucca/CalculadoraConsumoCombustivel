@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CalculadoraConsumoCombustivel
+namespace WindowsFormsApp1
 {
-    public partial class nameForm : Form
+    public partial class Form1 : Form
     {
-        public nameForm()
+        public Form1()
         {
             InitializeComponent();
         }

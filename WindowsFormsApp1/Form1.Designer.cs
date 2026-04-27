@@ -1,7 +1,7 @@
 ﻿
-namespace CalculadoraConsumoCombustivel
+namespace WindowsFormsApp1
 {
-    partial class nameForm
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@ namespace CalculadoraConsumoCombustivel
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -338,13 +337,13 @@ namespace CalculadoraConsumoCombustivel
             this.layoutControlItem7.Text = "Consumo médio Km/L";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(101, 13);
             // 
-            // nameForm
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.layoutControl1);
-            this.Name = "nameForm";
+            this.Name = "Form1";
             this.Text = "Calculadora Combustivel";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -406,3 +405,4 @@ namespace CalculadoraConsumoCombustivel
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
     }
 }
+

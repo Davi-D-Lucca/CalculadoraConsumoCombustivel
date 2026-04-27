@@ -9,18 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CalculadoraConsumoCombustivel
+namespace teste
 {
-    public partial class nameForm : Form
+    public partial class Form1 : Form
     {
-        public nameForm()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void btn_calcular_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            var consulta = new ConsultaApi();
+            var ec = new ConsultaApi();
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using CalculadoraConsumoCombustivel.Service;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CalculadoraConsumoCombustivel
 {
-    public partial class nameForm : Form
+    public partial class Form3 : Form
     {
-        public nameForm()
+        public Form3()
         {
             InitializeComponent();
-        }
-
-        private void btn_calcular_Click(object sender, EventArgs e)
-        {
-            var consulta = new ConsultaApi();
         }
     }
 }
