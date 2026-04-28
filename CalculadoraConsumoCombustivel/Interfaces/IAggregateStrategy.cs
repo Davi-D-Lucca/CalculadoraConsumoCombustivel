@@ -1,4 +1,5 @@
-﻿using CalculadoraConsumoCombustivel.DTO;
+﻿using CalculadoraConsumoCombustivel.Application;
+using CalculadoraConsumoCombustivel.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,8 @@ namespace CalculadoraConsumoCombustivel.Interfaces
     public interface IAggregateStrategy
     {
         //Lista e um metodo
-        List<PostoDTO> Start();
-     
+        //List<PostoDTO> Start();
+        List<PostoAgrupadoDTO> Start();
+        //List<PostoAgrupadoDTO> AgruparPorPosto();
     }
 }
