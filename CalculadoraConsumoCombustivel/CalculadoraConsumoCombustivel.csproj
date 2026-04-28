@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Application\AggregateStrategy.cs" />
     <Compile Include="Application\ConsultaListaPosto.cs" />
+    <Compile Include="DTO\DadosFormCombustivelDTO.cs" />
     <Compile Include="DTO\PostoAgrupadoDTO.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DTO\CnaeSecundarioDTO.cs" />
