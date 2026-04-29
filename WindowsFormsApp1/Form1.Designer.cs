@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.drdw_combustivel = new DevExpress.XtraEditors.LookUpEdit();
             this.drdw_postos = new DevExpress.XtraEditors.LookUpEdit();
@@ -38,28 +39,28 @@ namespace WindowsFormsApp1
             this.txt_veiculo = new DevExpress.XtraEditors.TextEdit();
             this.txt_distancia = new DevExpress.XtraEditors.TextEdit();
             this.txt_consumo = new DevExpress.XtraEditors.TextEdit();
+            this.btn_calcular = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
-            this.simpleLabelItem2 = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.lcg_posto = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.resultDiesel = new DevExpress.XtraLayout.SimpleLabelItem();
             this.simpleLabelItem3 = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.simpleLabelItem2 = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.resultEtanol = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.resultGasolina = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.lcg_cliente = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.resultGasolina = new DevExpress.XtraLayout.SimpleLabelItem();
-            this.resultEtanol = new DevExpress.XtraLayout.SimpleLabelItem();
-            this.resultDiesel = new DevExpress.XtraLayout.SimpleLabelItem();
-            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.lcg_posto = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.btn_calcular = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lcg_cliente = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drdw_combustivel.Properties)).BeginInit();
@@ -72,25 +73,25 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.txt_consumo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcg_posto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultDiesel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultEtanol)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultGasolina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultGasolina)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultEtanol)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultDiesel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lcg_posto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lcg_cliente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -121,6 +122,7 @@ namespace WindowsFormsApp1
             this.drdw_combustivel.Size = new System.Drawing.Size(254, 20);
             this.drdw_combustivel.StyleController = this.layoutControl1;
             this.drdw_combustivel.TabIndex = 15;
+            this.drdw_combustivel.EditValueChanged += new System.EventHandler(this.Campos_EditValueChanged);
             // 
             // drdw_postos
             // 
@@ -157,6 +159,7 @@ namespace WindowsFormsApp1
             this.txt_quantidade.Size = new System.Drawing.Size(254, 20);
             this.txt_quantidade.StyleController = this.layoutControl1;
             this.txt_quantidade.TabIndex = 3;
+            this.txt_quantidade.EditValueChanged += new System.EventHandler(this.Campos_EditValueChanged);
             // 
             // txt_veiculo
             // 
@@ -165,6 +168,7 @@ namespace WindowsFormsApp1
             this.txt_veiculo.Size = new System.Drawing.Size(254, 20);
             this.txt_veiculo.StyleController = this.layoutControl1;
             this.txt_veiculo.TabIndex = 0;
+            this.txt_veiculo.EditValueChanged += new System.EventHandler(this.Campos_EditValueChanged);
             // 
             // txt_distancia
             // 
@@ -175,6 +179,7 @@ namespace WindowsFormsApp1
             this.txt_distancia.Size = new System.Drawing.Size(254, 20);
             this.txt_distancia.StyleController = this.layoutControl1;
             this.txt_distancia.TabIndex = 6;
+            this.txt_distancia.EditValueChanged += new System.EventHandler(this.Campos_EditValueChanged);
             // 
             // txt_consumo
             // 
@@ -185,6 +190,17 @@ namespace WindowsFormsApp1
             this.txt_consumo.Size = new System.Drawing.Size(254, 20);
             this.txt_consumo.StyleController = this.layoutControl1;
             this.txt_consumo.TabIndex = 7;
+            this.txt_consumo.EditValueChanged += new System.EventHandler(this.Campos_EditValueChanged);
+            // 
+            // btn_calcular
+            // 
+            this.btn_calcular.Location = new System.Drawing.Point(367, 162);
+            this.btn_calcular.Name = "btn_calcular";
+            this.btn_calcular.Size = new System.Drawing.Size(409, 22);
+            this.btn_calcular.StyleController = this.layoutControl1;
+            this.btn_calcular.TabIndex = 16;
+            this.btn_calcular.Text = "Calcular";
+            this.btn_calcular.Click += new System.EventHandler(this.btn_calcular_Click_1);
             // 
             // layoutControlGroup1
             // 
@@ -207,34 +223,67 @@ namespace WindowsFormsApp1
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
-            // layoutControlItem5
+            // lcg_posto
             // 
-            this.layoutControlItem5.Control = this.txt_veiculo;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(413, 24);
-            this.layoutControlItem5.Text = "Veiculo";
-            this.layoutControlItem5.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(152, 13);
+            this.lcg_posto.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem8,
+            this.emptySpaceItem5,
+            this.resultDiesel,
+            this.simpleLabelItem3,
+            this.emptySpaceItem3,
+            this.simpleLabelItem2,
+            this.resultEtanol,
+            this.emptySpaceItem2,
+            this.resultGasolina,
+            this.simpleLabelItem1,
+            this.emptySpaceItem4});
+            this.lcg_posto.Location = new System.Drawing.Point(0, 0);
+            this.lcg_posto.Name = "lcg_posto";
+            this.lcg_posto.Size = new System.Drawing.Size(343, 188);
+            this.lcg_posto.Text = "Dados do posto";
             // 
-            // layoutControlItem3
+            // layoutControlItem8
             // 
-            this.layoutControlItem3.Control = this.txt_quantidade;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 48);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(413, 24);
-            this.layoutControlItem3.Text = "Quantidade";
-            this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(152, 13);
+            this.layoutControlItem8.Control = this.drdw_postos;
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(319, 24);
+            this.layoutControlItem8.Text = "Postos";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(152, 13);
             // 
-            // simpleLabelItem1
+            // emptySpaceItem5
             // 
-            this.simpleLabelItem1.AllowHotTrack = false;
-            this.simpleLabelItem1.Location = new System.Drawing.Point(0, 24);
-            this.simpleLabelItem1.Name = "simpleLabelItem1";
-            this.simpleLabelItem1.Size = new System.Drawing.Size(156, 17);
-            this.simpleLabelItem1.Text = "Gasolina";
-            this.simpleLabelItem1.TextSize = new System.Drawing.Size(152, 13);
+            this.emptySpaceItem5.AllowHotTrack = false;
+            this.emptySpaceItem5.Location = new System.Drawing.Point(0, 127);
+            this.emptySpaceItem5.Name = "emptySpaceItem5";
+            this.emptySpaceItem5.Size = new System.Drawing.Size(319, 19);
+            this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // resultDiesel
+            // 
+            this.resultDiesel.AllowHotTrack = false;
+            this.resultDiesel.Location = new System.Drawing.Point(156, 91);
+            this.resultDiesel.Name = "resultDiesel";
+            this.resultDiesel.Size = new System.Drawing.Size(163, 17);
+            this.resultDiesel.Text = " ";
+            this.resultDiesel.TextSize = new System.Drawing.Size(152, 13);
+            // 
+            // simpleLabelItem3
+            // 
+            this.simpleLabelItem3.AllowHotTrack = false;
+            this.simpleLabelItem3.Location = new System.Drawing.Point(0, 91);
+            this.simpleLabelItem3.Name = "simpleLabelItem3";
+            this.simpleLabelItem3.Size = new System.Drawing.Size(156, 17);
+            this.simpleLabelItem3.Text = "Diesel";
+            this.simpleLabelItem3.TextSize = new System.Drawing.Size(152, 13);
+            // 
+            // emptySpaceItem3
+            // 
+            this.emptySpaceItem3.AllowHotTrack = false;
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 76);
+            this.emptySpaceItem3.Name = "emptySpaceItem3";
+            this.emptySpaceItem3.Size = new System.Drawing.Size(319, 15);
+            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // simpleLabelItem2
             // 
@@ -245,14 +294,62 @@ namespace WindowsFormsApp1
             this.simpleLabelItem2.Text = "Etanol";
             this.simpleLabelItem2.TextSize = new System.Drawing.Size(152, 13);
             // 
-            // simpleLabelItem3
+            // resultEtanol
             // 
-            this.simpleLabelItem3.AllowHotTrack = false;
-            this.simpleLabelItem3.Location = new System.Drawing.Point(0, 91);
-            this.simpleLabelItem3.Name = "simpleLabelItem3";
-            this.simpleLabelItem3.Size = new System.Drawing.Size(156, 17);
-            this.simpleLabelItem3.Text = "Diesel";
-            this.simpleLabelItem3.TextSize = new System.Drawing.Size(152, 13);
+            this.resultEtanol.AllowHotTrack = false;
+            this.resultEtanol.Location = new System.Drawing.Point(156, 59);
+            this.resultEtanol.Name = "resultEtanol";
+            this.resultEtanol.Size = new System.Drawing.Size(163, 17);
+            this.resultEtanol.Text = " ";
+            this.resultEtanol.TextSize = new System.Drawing.Size(152, 13);
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 41);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(319, 18);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // resultGasolina
+            // 
+            this.resultGasolina.AllowHotTrack = false;
+            this.resultGasolina.Location = new System.Drawing.Point(156, 24);
+            this.resultGasolina.Name = "resultGasolina";
+            this.resultGasolina.Size = new System.Drawing.Size(163, 17);
+            this.resultGasolina.Text = " ";
+            this.resultGasolina.TextSize = new System.Drawing.Size(152, 13);
+            // 
+            // simpleLabelItem1
+            // 
+            this.simpleLabelItem1.AllowHotTrack = false;
+            this.simpleLabelItem1.Location = new System.Drawing.Point(0, 24);
+            this.simpleLabelItem1.Name = "simpleLabelItem1";
+            this.simpleLabelItem1.Size = new System.Drawing.Size(156, 17);
+            this.simpleLabelItem1.Text = "Gasolina";
+            this.simpleLabelItem1.TextSize = new System.Drawing.Size(152, 13);
+            // 
+            // emptySpaceItem4
+            // 
+            this.emptySpaceItem4.AllowHotTrack = false;
+            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 108);
+            this.emptySpaceItem4.Name = "emptySpaceItem4";
+            this.emptySpaceItem4.Size = new System.Drawing.Size(319, 19);
+            this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // lcg_cliente
+            // 
+            this.lcg_cliente.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem6,
+            this.layoutControlItem7,
+            this.layoutControlItem3,
+            this.layoutControlItem9,
+            this.layoutControlItem5,
+            this.layoutControlItem4});
+            this.lcg_cliente.Location = new System.Drawing.Point(343, 0);
+            this.lcg_cliente.Name = "lcg_cliente";
+            this.lcg_cliente.Size = new System.Drawing.Size(437, 188);
+            this.lcg_cliente.Text = "Dados do cliente";
             // 
             // layoutControlItem6
             // 
@@ -274,14 +371,15 @@ namespace WindowsFormsApp1
             this.layoutControlItem7.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(152, 13);
             // 
-            // layoutControlItem8
+            // layoutControlItem3
             // 
-            this.layoutControlItem8.Control = this.drdw_postos;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(319, 24);
-            this.layoutControlItem8.Text = "Postos";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(152, 13);
+            this.layoutControlItem3.Control = this.txt_quantidade;
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(413, 24);
+            this.layoutControlItem3.Text = "Quantidade";
+            this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(152, 13);
             // 
             // layoutControlItem9
             // 
@@ -293,85 +391,15 @@ namespace WindowsFormsApp1
             this.layoutControlItem9.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutControlItem9.TextSize = new System.Drawing.Size(152, 13);
             // 
-            // resultGasolina
+            // layoutControlItem5
             // 
-            this.resultGasolina.AllowHotTrack = false;
-            this.resultGasolina.Location = new System.Drawing.Point(156, 24);
-            this.resultGasolina.Name = "resultGasolina";
-            this.resultGasolina.Size = new System.Drawing.Size(163, 17);
-            this.resultGasolina.Text = " ";
-            this.resultGasolina.TextSize = new System.Drawing.Size(152, 13);
-            // 
-            // resultEtanol
-            // 
-            this.resultEtanol.AllowHotTrack = false;
-            this.resultEtanol.Location = new System.Drawing.Point(156, 59);
-            this.resultEtanol.Name = "resultEtanol";
-            this.resultEtanol.Size = new System.Drawing.Size(163, 17);
-            this.resultEtanol.Text = " ";
-            this.resultEtanol.TextSize = new System.Drawing.Size(152, 13);
-            // 
-            // resultDiesel
-            // 
-            this.resultDiesel.AllowHotTrack = false;
-            this.resultDiesel.Location = new System.Drawing.Point(156, 91);
-            this.resultDiesel.Name = "resultDiesel";
-            this.resultDiesel.Size = new System.Drawing.Size(163, 17);
-            this.resultDiesel.Text = " ";
-            this.resultDiesel.TextSize = new System.Drawing.Size(152, 13);
-            // 
-            // emptySpaceItem2
-            // 
-            this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 41);
-            this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(319, 18);
-            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem3
-            // 
-            this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 76);
-            this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(319, 15);
-            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem5
-            // 
-            this.emptySpaceItem5.AllowHotTrack = false;
-            this.emptySpaceItem5.Location = new System.Drawing.Point(0, 127);
-            this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(319, 19);
-            this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // lcg_posto
-            // 
-            this.lcg_posto.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem8,
-            this.emptySpaceItem5,
-            this.resultDiesel,
-            this.simpleLabelItem3,
-            this.emptySpaceItem3,
-            this.simpleLabelItem2,
-            this.resultEtanol,
-            this.emptySpaceItem2,
-            this.resultGasolina,
-            this.simpleLabelItem1,
-            this.emptySpaceItem4});
-            this.lcg_posto.Location = new System.Drawing.Point(0, 0);
-            this.lcg_posto.Name = "lcg_posto";
-            this.lcg_posto.Size = new System.Drawing.Size(343, 188);
-            this.lcg_posto.Text = "Dados do posto";
-            // 
-            // btn_calcular
-            // 
-            this.btn_calcular.Location = new System.Drawing.Point(367, 162);
-            this.btn_calcular.Name = "btn_calcular";
-            this.btn_calcular.Size = new System.Drawing.Size(409, 22);
-            this.btn_calcular.StyleController = this.layoutControl1;
-            this.btn_calcular.TabIndex = 16;
-            this.btn_calcular.Text = "Calcular";
-            this.btn_calcular.Click += new System.EventHandler(this.btn_calcular_Click_1);
+            this.layoutControlItem5.Control = this.txt_veiculo;
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(413, 24);
+            this.layoutControlItem5.Text = "Veiculo";
+            this.layoutControlItem5.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(152, 13);
             // 
             // layoutControlItem4
             // 
@@ -381,28 +409,6 @@ namespace WindowsFormsApp1
             this.layoutControlItem4.Size = new System.Drawing.Size(413, 26);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
-            // 
-            // lcg_cliente
-            // 
-            this.lcg_cliente.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem6,
-            this.layoutControlItem7,
-            this.layoutControlItem3,
-            this.layoutControlItem9,
-            this.layoutControlItem5,
-            this.layoutControlItem4});
-            this.lcg_cliente.Location = new System.Drawing.Point(343, 0);
-            this.lcg_cliente.Name = "lcg_cliente";
-            this.lcg_cliente.Size = new System.Drawing.Size(437, 188);
-            this.lcg_cliente.Text = "Dados do cliente";
-            // 
-            // emptySpaceItem4
-            // 
-            this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 108);
-            this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(319, 19);
-            this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // Form1
             // 
@@ -424,25 +430,25 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.txt_consumo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcg_posto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultDiesel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultEtanol)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultGasolina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultGasolina)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultEtanol)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultDiesel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lcg_posto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lcg_cliente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             this.ResumeLayout(false);
 
         }

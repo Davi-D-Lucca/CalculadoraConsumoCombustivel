@@ -1,18 +1,12 @@
 ﻿using CalculadoraConsumoCombustivel.Application;
 using CalculadoraConsumoCombustivel.Interfaces;
-using CalculadoraConsumoCombustivel.Service;
-using DevExpress.Xpf.Grid.LookUp;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using DevExpress.XtraLayout;
+using CalculadoraConsumoCombustivel.DTO;
 
 namespace WindowsFormsApp1
 {
@@ -90,6 +84,7 @@ namespace WindowsFormsApp1
 
             lcg_cliente.Enabled = true;
             btn_calcular.Enabled = false;
+            
 
         }
 
@@ -105,5 +100,27 @@ namespace WindowsFormsApp1
         {
             
         }
+
+        private void Campos_EditValueChanged(object sender, EventArgs e)
+        {
+           bool res = DadosFormCombustivelDTO.validarForms(drdw_postos.EditValue, drdw_combustivel.EditValue,
+                                    txt_veiculo.Text, txt_quantidade.Text, txt_consumo.Text, txt_distancia.Text);
+            btn_calcular.Enabled = res;
+        }
+
+
+        private DadosFormCombustivelDTO getForm()
+        {
+            var veiculo = txt_veiculo.Text;
+            var distancia = txt_distancia.Text;
+            var consumo = txt_consumo.Text;
+            var quantidade = txt_quantidade.Text;
+            var combustivel = drdw_combustivel.Text;
+            DadosFormCombustivelDTO res = new DadosFormCombustivelDTO(veiculo, combustivel, quantidade, consumo, distancia);
+            return res;
+        }
+
+
+        //Metodo para capturar os dados desses campos.
     }
 }

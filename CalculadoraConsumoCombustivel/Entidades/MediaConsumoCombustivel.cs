@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculadoraConsumoCombustivel.Enum
+namespace CalculadoraConsumoCombustivel.Entidades
 {
-    public enum TipoCombustivel 
+    public class MediaConsumoCombustivel
     {
-        Gasolina,
-        Etanol,
-        Diesel
+
     }
 }

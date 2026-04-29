@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace CalculadoraConsumoCombustivel.DTO
 {
-    class DadosFormCombustivelDTO
+    public class DadosFormCombustivelDTO
     {
-        public DadosFormCombustivelDTO(string veiculo, string combustivel, int quantidade, int consumoMedio, string distanciaPercorrida)
+        public DadosFormCombustivelDTO(string veiculo, string combustivel, string quantidade, string consumoMedio, string distanciaPercorrida)
         {
             Veiculo = veiculo;
-            //Combustivel = combustivel;
-            Quantidade = quantidade;
-            ConsumoMedio = consumoMedio;
+            Combustivel = SelecionarCombustivel(combustivel);
+            Quantidade = ConvertToInt(quantidade);
+            ConsumoMedio = ConvertToInt(consumoMedio);
             DistanciaPercorrida = distanciaPercorrida;
         }
 
@@ -24,9 +24,23 @@ namespace CalculadoraConsumoCombustivel.DTO
         public int ConsumoMedio { get; set; }
         public string DistanciaPercorrida { get; set; }
 
-        public bool IsValid()
+        public static bool validarForms(object posto, object combustivel, 
+                string veiculo, string quantidadeC, string consumoC, string distanciaC)
         {
-            return false;
+
+            bool postoSelecionado = posto != null;
+            bool combustivelSelecionado = combustivel != null;
+            bool textoVeiculo = TextoVazio(veiculo);
+            bool quantidade = NumeroValido(quantidadeC);
+            bool consumo = NumeroValido(consumoC);
+            bool distancia = NumeroValido(distanciaC);
+
+            return postoSelecionado && combustivelSelecionado && textoVeiculo && quantidade && consumo && distancia;
+        }
+
+        private int ConvertToInt(string text)
+        {
+            return Convert.ToInt32(text);
         }
 
         private TipoCombustivel SelecionarCombustivel(string combustivel)
@@ -43,7 +57,25 @@ namespace CalculadoraConsumoCombustivel.DTO
                     throw new InvalidOperationException("Não foi possivel identificar o tipo de combustivel");
             }
 
-           
+        }
+
+        public static bool TextoVazio(string text)
+        {
+            return !string.IsNullOrWhiteSpace(text);
+        }
+
+        public static bool NumeroValido(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return false;
+
+            decimal res;
+            if (!decimal.TryParse(text, out res))
+                return false;
+
+            if (res <= 0)
+                return false;
+            return true;
         }
     }
 }

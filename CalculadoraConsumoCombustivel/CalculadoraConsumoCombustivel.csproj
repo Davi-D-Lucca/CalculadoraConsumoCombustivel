@@ -92,6 +92,8 @@
     <Compile Include="DTO\RegimeTributarioDTO.cs" />
     <Compile Include="DTO\SocioDTO.cs" />
     <Compile Include="DTO\VeiculoDTO.cs" />
+    <Compile Include="Entidades\Base\Entidade.cs" />
+    <Compile Include="Entidades\MediaConsumoCombustivel.cs" />
     <Compile Include="Enum\TipoCombustivel.cs" />
     <Compile Include="Interfaces\IAggregateStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +101,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BO\" />
+    <Folder Include="DAO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" />
