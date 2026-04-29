@@ -14,9 +14,15 @@ namespace CalculadoraConsumoCombustivel.Data.Mapping
             // Chave primária
             HasKey(x => x.Id);
 
-            // ID
             Property(x => x.Id)
                 .HasColumnName("ID");
+
+            Property(x => x.CriadoEm)
+                .HasColumnName("CRIADO_EM")
+                .IsRequired();
+
+            Property(x => x.ModificadoEm)
+                .HasColumnName("MODIFICADO_EM");
 
             // Veículo
             Property(x => x.Veiculo)
@@ -36,7 +42,7 @@ namespace CalculadoraConsumoCombustivel.Data.Mapping
 
             // Consumo Médio
             Property(x => x.ConsumoMedio)
-                .HasColumnName("CONSUMO_MEDIO")
+                .HasColumnName("CONSUMO_MEDIO_TESTE")
                 .IsRequired();
 
             // Distância Percorrida
