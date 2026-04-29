@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculadoraConsumoCombustivel.Infra.Entidades.Base
 {
-    class Entidade
+    public class Entidade
     {
         //Travado em inteiro o projeto inteiro
         public int Id { get; set; }

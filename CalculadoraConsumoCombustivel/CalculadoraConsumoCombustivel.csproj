@@ -82,7 +82,6 @@
     <Compile Include="Application\ConsultaListaPosto.cs" />
     <Compile Include="DTO\DadosFormCombustivelDTO.cs" />
     <Compile Include="DTO\PostoAgrupadoDTO.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="DTO\CnaeSecundarioDTO.cs" />
     <Compile Include="DTO\CombustivelDTO.cs" />
     <Compile Include="DTO\DadosApiDTO.cs" />

@@ -1,4 +1,5 @@
 ﻿
+using CalculadoraConsumoCombustivel.Infra.Entidades.Base;
 using CalculadoraConsumoCombustivel.Infra.Enum;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CalculadoraConsumoCombustivel.Infra.Entidades
 {
-    public class MediaConsumoCombustivel
+    public class MediaConsumoCombustivel : Entidade
     {
         public string Veiculo { get; set; }
         public TipoCombustivel Combustivel { get; set; }

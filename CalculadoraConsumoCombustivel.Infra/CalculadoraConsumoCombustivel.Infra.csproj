@@ -95,9 +95,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Context\AppDbContext.cs" />
     <Compile Include="Entidades\Base\Entidade.cs" />
     <Compile Include="Entidades\MediaConsumoCombustivel.cs" />
     <Compile Include="Enum\TipoCombustivel.cs" />
+    <Compile Include="Mapeamento\MediaConsumoCombustivelMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
