@@ -92,8 +92,6 @@
     <Compile Include="DTO\RegimeTributarioDTO.cs" />
     <Compile Include="DTO\SocioDTO.cs" />
     <Compile Include="DTO\VeiculoDTO.cs" />
-    <Compile Include="Entidades\Base\Entidade.cs" />
-    <Compile Include="Entidades\MediaConsumoCombustivel.cs" />
     <Compile Include="Enum\TipoCombustivel.cs" />
     <Compile Include="Interfaces\IAggregateStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
