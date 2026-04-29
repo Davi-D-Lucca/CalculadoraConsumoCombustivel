@@ -1,4 +1,4 @@
-﻿using CalculadoraConsumoCombustivel.Enum;
+﻿using CalculadoraConsumoCombustivel.Infra.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
