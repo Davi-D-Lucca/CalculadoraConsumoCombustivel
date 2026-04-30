@@ -398,6 +398,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CalculadoraConsumoCombustivel.Infra\CalculadoraConsumoCombustivel.Infra.csproj">
+      <Project>{587AB68B-4D6E-45DC-A86F-C9D8118DAC7D}</Project>
+      <Name>CalculadoraConsumoCombustivel.Infra</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CalculadoraConsumoCombustivel\CalculadoraConsumoCombustivel.csproj">
       <Project>{be4ec1e1-c994-49c1-94c6-27aaafc27591}</Project>
       <Name>CalculadoraConsumoCombustivel</Name>

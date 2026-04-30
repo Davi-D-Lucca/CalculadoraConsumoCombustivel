@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
+            listarRegistros();
             PostosCombustiveis();
             TipoCombustivel();
             InicializarForm();
@@ -130,6 +131,16 @@ namespace WindowsFormsApp1
             return res;
         }
 
+        public void listarRegistros()
+        {
+            MediaConsumoCombustivelService service = new MediaConsumoCombustivelService();
+            var res = service.listarRegistros();
+
+            //DataTable dt = new DataTable()
+            //dt = 
+
+            gridControl1.DataSource = res;
+        }
 
         //Metodo para capturar os dados desses campos.
     }

@@ -29,7 +29,10 @@ namespace CalculadoraConsumoCombustivel.Service
             _repositorio.Adicionar(media);
         }
 
-        public void 
+        public List<MediaConsumoCombustivel> listarRegistros()
+        {
+            return _repositorio.Listar();
+        }
 
 
     }
