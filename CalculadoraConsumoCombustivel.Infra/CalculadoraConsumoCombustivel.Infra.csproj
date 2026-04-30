@@ -104,8 +104,17 @@
     <Compile Include="Migrations\202604291524019_CriarTabelaMediaConsumo.designer.cs">
       <DependentUpon>202604291524019_CriarTabelaMediaConsumo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202604291526441_CriarTabelaMediaConsumo1.cs" />
+    <Compile Include="Migrations\202604291526441_CriarTabelaMediaConsumo1.designer.cs">
+      <DependentUpon>202604291526441_CriarTabelaMediaConsumo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202604291527570_CriarTabelaMediaConsumo2.cs" />
+    <Compile Include="Migrations\202604291527570_CriarTabelaMediaConsumo2.designer.cs">
+      <DependentUpon>202604291527570_CriarTabelaMediaConsumo2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\MediaConsumoCombustivelRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -121,7 +130,14 @@
     <EmbeddedResource Include="Migrations\202604291524019_CriarTabelaMediaConsumo.resx">
       <DependentUpon>202604291524019_CriarTabelaMediaConsumo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202604291526441_CriarTabelaMediaConsumo1.resx">
+      <DependentUpon>202604291526441_CriarTabelaMediaConsumo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202604291527570_CriarTabelaMediaConsumo2.resx">
+      <DependentUpon>202604291527570_CriarTabelaMediaConsumo2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

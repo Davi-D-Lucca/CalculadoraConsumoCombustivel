@@ -42,7 +42,7 @@ namespace CalculadoraConsumoCombustivel.Data.Mapping
 
             // Consumo Médio
             Property(x => x.ConsumoMedio)
-                .HasColumnName("CONSUMO_MEDIO_TESTE")
+                .HasColumnName("CONSUMO_MEDIO")
                 .IsRequired();
 
             // Distância Percorrida
