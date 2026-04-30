@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraLayout;
 using CalculadoraConsumoCombustivel.DTO;
+using CalculadoraConsumoCombustivel.Service;
+using System.Text.Json;
 
 namespace WindowsFormsApp1
 {
@@ -53,13 +55,20 @@ namespace WindowsFormsApp1
 
         private async Task<List<PostoAgrupadoDTO>> resultNomePostos()
         {
-            var aplication = new ConsultaListaPosto();
-            var diesel = await aplication.ConsultaPostosDiesel();
-            var etanol = await aplication.ConsultaPostosEtanol();
-            var gasolina = await aplication.ConsultaPostosGasolina();
-            IAggregateStrategy strategy = new AggregateStrategy(diesel, etanol, gasolina);
-            var result = strategy.Start();
-            return result;
+            try
+            {
+                var aplication = new ConsultaListaPosto();
+                var diesel = await aplication.ConsultaPostosDiesel();
+                var etanol = await aplication.ConsultaPostosEtanol();
+                var gasolina = await aplication.ConsultaPostosGasolina();
+                IAggregateStrategy strategy = new AggregateStrategy(diesel, etanol, gasolina);
+                var result = strategy.Start();
+                return result;
+
+            }catch(Exception ex)
+            {
+                return null;
+            }
         }
 
         private void drdw_postos_EditValueChanged(object sender, EventArgs e)
@@ -98,7 +107,8 @@ namespace WindowsFormsApp1
 
         private void btn_calcular_Click_1(object sender, EventArgs e)
         {
-            
+            MediaConsumoCombustivelService service = new MediaConsumoCombustivelService();
+            service.adicionarNovoRegistro(getForm());
         }
 
         private void Campos_EditValueChanged(object sender, EventArgs e)
